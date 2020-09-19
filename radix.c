@@ -108,7 +108,7 @@ int main()
 	time_t qstart, qend, rstart, rend;
 
 	puts("GENERATING DATA");
-	srand(0xDEADBEEF);
+	srand(time(NULL));
 	for (size_t i = 0; i < TEST_SIZE; i++) {
 		radix_data[i] = rand() & 0xFFFFFFFF;
 		qsort_data[i] = radix_data[i];
