@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 CC=gcc
-CFLAGS=-O3
+CFLAGS=-O3 -Wall -Werror
 SRC=radix.c
 
 all: test radix.o
